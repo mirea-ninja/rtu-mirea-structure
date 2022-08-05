@@ -62,7 +62,7 @@ def generate_university_md_file(rtu_mirea_structure):
 
     md_file.new_header(2, "Институты")
     for institute in rtu_mirea_structure.institutes:
-        md_file.new_line(f"* [{from_tex_to_html(institute.name)}](./{institute.id}.md)")
+        md_file.new_line(f"* [{from_tex_to_html(institute.name)}](./institutes/{institute.short_name}.md)")
 
     md_file.new_header(1, "Источники")
     md_file.new_line("* [Структура РТУ МИРЭА](https://www.mirea.ru/about/the-structure-of-the-university/)")
@@ -77,7 +77,7 @@ def generate_university_md_file(rtu_mirea_structure):
 
 
 def generate_institute_md_file(institute_structure):
-    md_file = MdUtils(file_name=f"{institute_structure.id}.md")
+    md_file = MdUtils(file_name=f"./institutes/{institute_structure.short_name}.md")
 
     md_file.new_header(1, from_tex_to_html(institute_structure.name))
 
