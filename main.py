@@ -60,38 +60,68 @@ def generate_university_md_file(rtu_mirea_structure):
     md_file.new_header(2, "Полное название")
     add_code_sources_to_md_file(md_file, rtu_mirea_structure.full_name, 3)
 
-    md_file.new_header(2, "Институты")
-    for institute in rtu_mirea_structure.institutes:
-        md_file.new_line(f"* [{from_tex_to_html(institute.name)}](./institutes/{institute.short_name}.md)")
+    md_file.new_header(2, "Учебно-научные структурные подразделения")
+    for division in rtu_mirea_structure.educational_and_scientific_structural_divisions:
+        md_file.new_line(f"* [{from_tex_to_html(division.name)}](./educational_" +
+                         f"and_scientific_structural_divisions/{from_tex_to_text(division.short_name)}.md)")
+
+    md_file.new_header(2, "Филиалы")
+    for branch in rtu_mirea_structure.branches:
+        md_file.new_line(f"* [{from_tex_to_html(branch.short_name)}]" +
+                         f"(./branches/{from_tex_to_text(branch.short_name).replace(' ', '%20')}.md)")
 
     md_file.new_header(1, "Источники")
-    md_file.new_line("* [Структура РТУ МИРЭА](https://www.mirea.ru/about/the-structure-of-the-university/)")
-    md_file.new_line("* [ГОСТ 8.417-81](https://docs.cntd.ru/document/1200005371)")
-    md_file.new_line("* [Википедия. Неразрывный пробел](https://ru.wikipedia.org/wiki/Неразрывный_пробел)")
-    md_file.new_line("* [А.&nbsp;Лебедев «Ководство. § 97. Тире, минус и дефис, или Черты русской типографики»]" +
-                     "(https://www.artlebedev.ru/kovodstvo/sections/97/)")
-    md_file.new_line("* [А.&nbsp;Лебедев «Ководство. § 158. Короткое тире»]" +
-                     "(https://www.artlebedev.ru/kovodstvo/sections/158/)")
+    sources = {
+        "Структура РТУ МИРЭА": "https://www.mirea.ru/about/the-structure-of-the-university/",
+        "ГОСТ 8.417-81": "https://docs.cntd.ru/document/1200005371",
+        "Википедия. Неразрывный пробел": "https://ru.wikipedia.org/wiki/Неразрывный_пробел",
+        "А.&nbsp;Лебедев «Ководство. §&nbsp;97. Тире, минус и&nbsp;дефис, или Черты русской типографики":
+            "https://www.artlebedev.ru/kovodstvo/sections/97/",
+        "А.&nbsp;Лебедев «Ководство. §&nbsp;158. Короткое тире»": "https://www.artlebedev.ru/kovodstvo/sections/158/"
+    }
+    for name, link in sources.items():
+        md_file.new_line(f"* [{name}]({link})")
 
     md_file.create_md_file()
 
 
-def generate_institute_md_file(institute_structure):
-    md_file = MdUtils(file_name=f"./institutes/{institute_structure.short_name}.md")
+def generate_education_and_scientific_structural_divisions_md_file(division_structure):
+    md_file = MdUtils(file_name="./educational_and_scientific_structural_divisions/" +
+                                f"{from_tex_to_text(division_structure.short_name)}.md")
 
-    md_file.new_header(1, from_tex_to_html(institute_structure.name))
+    md_file.new_header(1, from_tex_to_html(division_structure.name))
 
     md_file.new_header(2, "Название")
-    add_code_sources_to_md_file(md_file, institute_structure.name, 3)
+    add_code_sources_to_md_file(md_file, division_structure.name, 3)
     md_file.new_header(2, "Короткое название")
-    add_code_sources_to_md_file(md_file, institute_structure.short_name, 3)
+    add_code_sources_to_md_file(md_file, division_structure.short_name, 3)
 
-    md_file.new_header(2, "Структура института")
-    for department in institute_structure.departments:
+    if len(division_structure.departments) > 0:
+        md_file.new_header(2, "Структура")
+        for department in division_structure.departments:
+            md_file.new_header(3, from_tex_to_html(department[0].upper() + department[1:]))
+            add_code_sources_to_md_file(md_file, department, 4)
+
+    md_file.create_md_file()
+
+
+def generate_branches_md_file(branch_structure):
+    md_file = MdUtils(file_name=f"./branches/{from_tex_to_text(branch_structure.short_name)}.md")
+
+    md_file.new_header(1, from_tex_to_html(branch_structure.short_name[0].upper() + branch_structure.short_name[1:]))
+
+    md_file.new_header(2, "Полное название")
+    add_code_sources_to_md_file(md_file, branch_structure.full_name, 3)
+    md_file.new_header(2, "Короткое название")
+    add_code_sources_to_md_file(md_file, branch_structure.short_name, 3)
+
+    md_file.new_header(2, "Структура")
+    for department in branch_structure.departments:
         md_file.new_header(3, from_tex_to_html(department[0].upper() + department[1:]))
         add_code_sources_to_md_file(md_file, department, 4)
 
     md_file.create_md_file()
+
 
 
 def main():
@@ -99,8 +129,11 @@ def main():
                                      object_hook=lambda d: SimpleNamespace(**d))
 
     generate_university_md_file(rtu_mirea_structure)
-    for institute in rtu_mirea_structure.institutes:
-        generate_institute_md_file(institute)
+    for division in rtu_mirea_structure.educational_and_scientific_structural_divisions:
+        generate_education_and_scientific_structural_divisions_md_file(division)
+
+    for branch in rtu_mirea_structure.branches:
+        generate_branches_md_file(branch)
 
 
 if __name__ == '__main__':
