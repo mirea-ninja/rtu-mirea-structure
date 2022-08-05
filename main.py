@@ -49,7 +49,7 @@ def add_code_sources_to_md_file(md_file, tex_source, headers_level):
 
 
 def generate_university_md_file(rtu_mirea_structure):
-    md_file = MdUtils(file_name="rtu-mirea.md")
+    md_file = MdUtils(file_name="readme.md")
 
     md_file.new_header(1, "Университет")
 
