@@ -86,8 +86,15 @@
 * [филиал РТУ МИРЭА в&nbsp;г.&nbsp;Ставрополе](./branches/филиал%20РТУ%20МИРЭА%20в%20г.%20Ставрополе.md)
 # Источники
   
-* [Структура РТУ МИРЭА](https://www.mirea.ru/about/the-structure-of-the-university/)  
-* [ГОСТ 8.417-81](https://docs.cntd.ru/document/1200005371)  
-* [Википедия. Неразрывный пробел](https://ru.wikipedia.org/wiki/Неразрывный_пробел)  
-* [А.&nbsp;Лебедев «Ководство. §&nbsp;97. Тире, минус и&nbsp;дефис, или Черты русской типографики](https://www.artlebedev.ru/kovodstvo/sections/97/)  
-* [А.&nbsp;Лебедев «Ководство. §&nbsp;158. Короткое тире»](https://www.artlebedev.ru/kovodstvo/sections/158/)
+* [Структура РТУ МИРЭА]  
+* [ГОСТ 8.417-81]  
+* [Википедия. Неразрывный пробел]  
+* [А.&nbsp;Лебедев «Ководство. §&nbsp;97. Тире, минус и&nbsp;дефис, или Черты русской типографики]  
+* [А.&nbsp;Лебедев «Ководство. §&nbsp;158. Короткое тире»]
+
+
+[А.&nbsp;Лебедев «Ководство. §&nbsp;158. Короткое тире»]: https://www.artlebedev.ru/kovodstvo/sections/158/
+[А.&nbsp;Лебедев «Ководство. §&nbsp;97. Тире, минус и&nbsp;дефис, или Черты русской типографики]: https://www.artlebedev.ru/kovodstvo/sections/97/
+[Википедия. Неразрывный пробел]: https://ru.wikipedia.org/wiki/Неразрывный_пробел
+[ГОСТ 8.417-81]: https://docs.cntd.ru/document/1200005371
+[Структура РТУ МИРЭА]: https://www.mirea.ru/about/the-structure-of-the-university/

@@ -95,7 +95,7 @@ def generate_university_md_file(rtu_mirea_structure):
         "А.&nbsp;Лебедев «Ководство. §&nbsp;158. Короткое тире»": "https://www.artlebedev.ru/kovodstvo/sections/158/"
     }
     for name, link in sources.items():
-        md_file.new_line(f"* [{name}]({link})")
+        md_file.new_line(f"* {md_file.new_reference_link(link, name)}")
 
     md_file.create_md_file()
 
