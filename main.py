@@ -36,14 +36,29 @@ def from_tex_to_html(tex_source):
         .replace("--", "&#8211;") \
         .replace("<<", "&laquo;") \
         .replace(">>", "&raquo;") \
+        .replace("„", "&#132;") \
+        .replace("“", "&#147;") \
         .replace("\\textnumero", "&numero;")
+
+
+def from_tex_to_tex_with_dirtytalk(tex_source):
+    return tex_source \
+        .replace("<<", "\\say{") \
+        .replace(">>", "}") \
+        .replace("„", "\\say{") \
+        .replace("“", "}")
 
 
 def add_code_sources_to_md_file(md_file, tex_source, headers_level):
     md_file.new_header(headers_level, "Plain text:")
     md_file.new_line(text_fenced_code_block(from_tex_to_text(tex_source)))
+
     md_file.new_header(headers_level, "TeX:")
     md_file.new_line(tex_fenced_code_block(tex_source))
+
+    md_file.new_header(headers_level, "TeX with dirtytalk package:")
+    md_file.new_line(tex_fenced_code_block(from_tex_to_tex_with_dirtytalk(tex_source)))
+
     md_file.new_header(headers_level, "HTML:")
     md_file.new_line(html_fenced_code_block(from_tex_to_html(tex_source)))
 
@@ -121,7 +136,6 @@ def generate_branches_md_file(branch_structure):
         add_code_sources_to_md_file(md_file, department, 4)
 
     md_file.create_md_file()
-
 
 
 def main():
