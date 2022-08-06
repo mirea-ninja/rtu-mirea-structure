@@ -1,4 +1,5 @@
 import json
+from collections import defaultdict
 from types import SimpleNamespace
 from mdutils import MdUtils
 
@@ -50,18 +51,29 @@ def from_tex_to_tex_with_dirtytalk(tex_source):
 
 
 def add_code_sources_to_md_file(md_file, tex_source, headers_level):
-    md_file.new_header(headers_level, "Plain text:")
-    md_file.new_line(text_fenced_code_block(from_tex_to_text(tex_source)))
+    code = {
+        "plain text": from_tex_to_text(tex_source),
+        "TeX": tex_source,
+        "TeX with dirtytalk package": from_tex_to_tex_with_dirtytalk(tex_source),
+        "HTML": from_tex_to_html(tex_source)
+    }
 
-    md_file.new_header(headers_level, "TeX:")
-    md_file.new_line(tex_fenced_code_block(tex_source))
+    grouped_code = defaultdict(list)
+    for language, code_source in sorted(code.items()):
+        grouped_code[code_source].append(language)
 
-    md_file.new_header(headers_level, "TeX with dirtytalk package:")
-    md_file.new_line(tex_fenced_code_block(from_tex_to_tex_with_dirtytalk(tex_source)))
-
-    md_file.new_header(headers_level, "HTML:")
-    md_file.new_line(html_fenced_code_block(from_tex_to_html(tex_source)))
-
+    for code_source, languages in grouped_code.items():
+        md_file.new_list(languages)
+        if languages[0] == "plain text":
+            code_block = text_fenced_code_block(code_source)
+        elif languages[0] in ("TeX", "TeX with dirtytalk package"):
+            code_block = tex_fenced_code_block(code_source)
+        elif languages[0] == "HTML":
+            code_block = html_fenced_code_block(code_source)
+        else:
+            code_block = fenced_code_block(code_source, "")
+        md_file.new_paragraph(code_block)
+        md_file.new_paragraph("---")
 
 def generate_university_md_file(rtu_mirea_structure):
     md_file = MdUtils(file_name="readme.md")
@@ -76,14 +88,22 @@ def generate_university_md_file(rtu_mirea_structure):
     add_code_sources_to_md_file(md_file, rtu_mirea_structure.full_name, 3)
 
     md_file.new_header(2, "Учебно-научные структурные подразделения")
-    for division in rtu_mirea_structure.educational_and_scientific_structural_divisions:
-        md_file.new_line(f"* [{from_tex_to_html(division.name)}](./educational_" +
-                         f"and_scientific_structural_divisions/{from_tex_to_text(division.short_name)}.md)")
+    md_file.new_list(
+        map(
+            lambda division: md_file.new_reference_link(
+                f"./educational_and_scientific_structural_divisions/{from_tex_to_text(division.short_name).replace(' ', '%20')}.md",
+                from_tex_to_html(division.name)),
+            rtu_mirea_structure.educational_and_scientific_structural_divisions
+        ), marked_with="*")
 
     md_file.new_header(2, "Филиалы")
-    for branch in rtu_mirea_structure.branches:
-        md_file.new_line(f"* [{from_tex_to_html(branch.short_name)}]" +
-                         f"(./branches/{from_tex_to_text(branch.short_name).replace(' ', '%20')}.md)")
+    md_file.new_list(
+        map(
+            lambda branch: md_file.new_reference_link(
+                f"./branches/{from_tex_to_text(branch.short_name).replace(' ', '%20')}.md",
+                from_tex_to_html(branch.short_name)),
+            rtu_mirea_structure.branches
+        ), marked_with="*")
 
     md_file.new_header(1, "Источники")
     sources = {
@@ -94,8 +114,7 @@ def generate_university_md_file(rtu_mirea_structure):
             "https://www.artlebedev.ru/kovodstvo/sections/97/",
         "А.&nbsp;Лебедев «Ководство. §&nbsp;158. Короткое тире»": "https://www.artlebedev.ru/kovodstvo/sections/158/"
     }
-    for name, link in sources.items():
-        md_file.new_line(f"* {md_file.new_reference_link(link, name)}")
+    md_file.new_list(list(map(lambda pair: md_file.new_reference_link(pair[1], pair[0]), sources.items())), "*")
 
     md_file.create_md_file()
 
