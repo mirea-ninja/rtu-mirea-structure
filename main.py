@@ -4,6 +4,10 @@ from types import SimpleNamespace
 from mdutils import MdUtils
 
 
+EDUCATIONAL_AND_SCIENTIFIC_STRUCTURAL_DIVISIONS_DIRECTORY_NAME = "educational_and_scientific_structural_divisions"
+BRANCHES_DIRECTORY_NAME = "branches"
+
+
 def fenced_code_block(code, lang):
     return f"""```{lang}\n{code}\n```"""
 
@@ -37,8 +41,6 @@ def from_tex_to_html(tex_source):
         .replace("--", "&#8211;") \
         .replace("<<", "&laquo;") \
         .replace(">>", "&raquo;") \
-        .replace("„", "&#132;") \
-        .replace("“", "&#147;") \
         .replace("\\textnumero", "&numero;")
 
 
@@ -50,7 +52,7 @@ def from_tex_to_tex_with_dirtytalk(tex_source):
         .replace("“", "}")
 
 
-def add_code_sources_to_md_file(md_file, tex_source, headers_level):
+def add_code_sources_to_md_file(md_file, tex_source):
     code = {
         "plain text": from_tex_to_text(tex_source),
         "TeX": tex_source,
@@ -59,7 +61,7 @@ def add_code_sources_to_md_file(md_file, tex_source, headers_level):
     }
 
     grouped_code = defaultdict(list)
-    for language, code_source in sorted(code.items()):
+    for language, code_source in sorted(code.items(), key=lambda t: t[0].lower()):
         grouped_code[code_source].append(language)
 
     for code_source, languages in grouped_code.items():
@@ -73,7 +75,9 @@ def add_code_sources_to_md_file(md_file, tex_source, headers_level):
         else:
             code_block = fenced_code_block(code_source, "")
         md_file.new_paragraph(code_block)
+
         md_file.new_paragraph("---")
+
 
 def generate_university_md_file(rtu_mirea_structure):
     md_file = MdUtils(file_name="readme.md")
@@ -81,29 +85,29 @@ def generate_university_md_file(rtu_mirea_structure):
     md_file.new_header(1, "Университет")
 
     md_file.new_header(2, "Название")
-    add_code_sources_to_md_file(md_file, rtu_mirea_structure.name, 3)
+    add_code_sources_to_md_file(md_file, rtu_mirea_structure.name)
     md_file.new_header(2, "Короткое название")
-    add_code_sources_to_md_file(md_file, rtu_mirea_structure.short_name, 3)
+    add_code_sources_to_md_file(md_file, rtu_mirea_structure.short_name)
     md_file.new_header(2, "Полное название")
-    add_code_sources_to_md_file(md_file, rtu_mirea_structure.full_name, 3)
+    add_code_sources_to_md_file(md_file, rtu_mirea_structure.full_name)
 
     md_file.new_header(2, "Учебно-научные структурные подразделения")
     md_file.new_list(
         map(
             lambda division: md_file.new_reference_link(
-                f"./educational_and_scientific_structural_divisions/{from_tex_to_text(division.short_name).replace(' ', '%20')}.md",
+                f"./{EDUCATIONAL_AND_SCIENTIFIC_STRUCTURAL_DIVISIONS_DIRECTORY_NAME}/" +
+                f"{from_tex_to_text(division.short_name).replace(' ', '%20')}.md",
                 from_tex_to_html(division.name)),
             rtu_mirea_structure.educational_and_scientific_structural_divisions
-        ), marked_with="*")
+        ))
 
     md_file.new_header(2, "Филиалы")
     md_file.new_list(
         map(
             lambda branch: md_file.new_reference_link(
-                f"./branches/{from_tex_to_text(branch.short_name).replace(' ', '%20')}.md",
+                f"./{BRANCHES_DIRECTORY_NAME}/{from_tex_to_text(branch.short_name).replace(' ', '%20')}.md",
                 from_tex_to_html(branch.short_name)),
-            rtu_mirea_structure.branches
-        ), marked_with="*")
+            rtu_mirea_structure.branches))
 
     md_file.new_header(1, "Источники")
     sources = {
@@ -114,45 +118,45 @@ def generate_university_md_file(rtu_mirea_structure):
             "https://www.artlebedev.ru/kovodstvo/sections/97/",
         "А.&nbsp;Лебедев «Ководство. §&nbsp;158. Короткое тире»": "https://www.artlebedev.ru/kovodstvo/sections/158/"
     }
-    md_file.new_list(list(map(lambda pair: md_file.new_reference_link(pair[1], pair[0]), sources.items())), "*")
+    md_file.new_list(list(map(lambda key: md_file.new_reference_link(sources[key], key), sources)))
 
     md_file.create_md_file()
 
 
 def generate_education_and_scientific_structural_divisions_md_file(division_structure):
-    md_file = MdUtils(file_name="./educational_and_scientific_structural_divisions/" +
+    md_file = MdUtils(file_name=f"./{EDUCATIONAL_AND_SCIENTIFIC_STRUCTURAL_DIVISIONS_DIRECTORY_NAME}/" +
                                 f"{from_tex_to_text(division_structure.short_name)}.md")
 
     md_file.new_header(1, from_tex_to_html(division_structure.name))
 
     md_file.new_header(2, "Название")
-    add_code_sources_to_md_file(md_file, division_structure.name, 3)
+    add_code_sources_to_md_file(md_file, division_structure.name)
     md_file.new_header(2, "Короткое название")
-    add_code_sources_to_md_file(md_file, division_structure.short_name, 3)
+    add_code_sources_to_md_file(md_file, division_structure.short_name)
 
     if len(division_structure.departments) > 0:
         md_file.new_header(2, "Структура")
         for department in division_structure.departments:
             md_file.new_header(3, from_tex_to_html(department[0].upper() + department[1:]))
-            add_code_sources_to_md_file(md_file, department, 4)
+            add_code_sources_to_md_file(md_file, department)
 
     md_file.create_md_file()
 
 
 def generate_branches_md_file(branch_structure):
-    md_file = MdUtils(file_name=f"./branches/{from_tex_to_text(branch_structure.short_name)}.md")
+    md_file = MdUtils(file_name=f"./{BRANCHES_DIRECTORY_NAME}/{from_tex_to_text(branch_structure.short_name)}.md")
 
     md_file.new_header(1, from_tex_to_html(branch_structure.short_name[0].upper() + branch_structure.short_name[1:]))
 
     md_file.new_header(2, "Полное название")
-    add_code_sources_to_md_file(md_file, branch_structure.full_name, 3)
+    add_code_sources_to_md_file(md_file, branch_structure.full_name)
     md_file.new_header(2, "Короткое название")
-    add_code_sources_to_md_file(md_file, branch_structure.short_name, 3)
+    add_code_sources_to_md_file(md_file, branch_structure.short_name)
 
     md_file.new_header(2, "Структура")
     for department in branch_structure.departments:
         md_file.new_header(3, from_tex_to_html(department[0].upper() + department[1:]))
-        add_code_sources_to_md_file(md_file, department, 4)
+        add_code_sources_to_md_file(md_file, department)
 
     md_file.create_md_file()
 
