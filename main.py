@@ -112,7 +112,7 @@ def generate_university_md_file(rtu_mirea_structure):
     md_file.new_header(1, "Источники")
     sources = {
         "Структура РТУ МИРЭА": "https://www.mirea.ru/about/the-structure-of-the-university/",
-        "ГОСТ 8.417-2002": "https://ru.wikisource.org/wiki/ГОСТ_8.417—2002",
+        "ГОСТ 8.417-2002": "https://ru.wikisource.org/wiki/ГОСТ_8.417‒2002",
         "Википедия. Неразрывный пробел": "https://ru.wikipedia.org/wiki/Неразрывный_пробел",
         "А.&nbsp;Лебедев «Ководство. §&nbsp;97. Тире, минус и&nbsp;дефис, или Черты русской типографики":
             "https://www.artlebedev.ru/kovodstvo/sections/97/",

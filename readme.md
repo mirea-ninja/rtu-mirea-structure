@@ -87,6 +87,7 @@
 - [Институт кибербезопасности и&nbsp;цифровых технологий]
 - [Институт тонких химических технологий имени М.&nbsp;В.&nbsp;Ломоносова]
 - [Институт технологий управления]
+- [Институт молодежной политики и&nbsp;международных отношений]
 - [Колледж программирования и&nbsp;кибербезопасности]
 
 ## Филиалы
@@ -107,10 +108,11 @@
 [А.&nbsp;Лебедев «Ководство. §&nbsp;158. Короткое тире»]: https://www.artlebedev.ru/kovodstvo/sections/158/
 [А.&nbsp;Лебедев «Ководство. §&nbsp;97. Тире, минус и&nbsp;дефис, или Черты русской типографики]: https://www.artlebedev.ru/kovodstvo/sections/97/
 [Википедия. Неразрывный пробел]: https://ru.wikipedia.org/wiki/Неразрывный_пробел
-[ГОСТ 8.417-2002]: https://ru.wikisource.org/wiki/ГОСТ_8.417—2002
+[ГОСТ 8.417-2002]: https://ru.wikisource.org/wiki/ГОСТ_8.417‒2002
 [Институт информационных технологий]: ./educational_and_scientific_structural_divisions/ИИТ.md
 [Институт искусственного интеллекта]: ./educational_and_scientific_structural_divisions/ИИИ.md
 [Институт кибербезопасности и&nbsp;цифровых технологий]: ./educational_and_scientific_structural_divisions/ИКЦТ.md
+[Институт молодежной политики и&nbsp;международных отношений]: ./educational_and_scientific_structural_divisions/ИМПМО.md
 [Институт перспективных технологий и&nbsp;индустриального программирования]: ./educational_and_scientific_structural_divisions/ИПТИП.md
 [Институт радиоэлектроники и&nbsp;информатики]: ./educational_and_scientific_structural_divisions/ИРИ.md
 [Институт технологий управления]: ./educational_and_scientific_structural_divisions/ИТУ.md
