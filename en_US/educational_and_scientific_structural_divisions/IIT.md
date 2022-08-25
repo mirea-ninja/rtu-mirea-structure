@@ -84,13 +84,13 @@ The Department of Corporate Information Systems
 ```
 
 ---
-### Base Department &numero;&nbsp;231&mdash;Information Processes and Systems
+### Base Department No.&nbsp;231&mdash;Information Processes and Systems
 
 - HTML
 
 
 ```html
-Base Department &numero;&nbsp;231&mdash;Information Processes and Systems
+Base Department No.&nbsp;231&mdash;Information Processes and Systems
 ```
 
 ---
@@ -98,7 +98,7 @@ Base Department &numero;&nbsp;231&mdash;Information Processes and Systems
 
 
 ```text
-Base Department № 231—Information Processes and Systems
+Base Department No. 231—Information Processes and Systems
 ```
 
 ---
@@ -107,17 +107,17 @@ Base Department № 231—Information Processes and Systems
 
 
 ```tex
-Base Department \textnumero~231---Information Processes and Systems
+Base Department No.~231---Information Processes and Systems
 ```
 
 ---
-### Base Department &numero;&nbsp;232&mdash;Computing Real Time Systems
+### Base Department No.&nbsp;232&mdash;Computing Real Time Systems
 
 - HTML
 
 
 ```html
-Base Department &numero;&nbsp;232&mdash;Computing Real Time Systems
+Base Department No.&nbsp;232&mdash;Computing Real Time Systems
 ```
 
 ---
@@ -125,7 +125,7 @@ Base Department &numero;&nbsp;232&mdash;Computing Real Time Systems
 
 
 ```text
-Base Department № 232—Computing Real Time Systems
+Base Department No. 232—Computing Real Time Systems
 ```
 
 ---
@@ -134,17 +134,17 @@ Base Department № 232—Computing Real Time Systems
 
 
 ```tex
-Base Department \textnumero~232---Computing Real Time Systems
+Base Department No.~232---Computing Real Time Systems
 ```
 
 ---
-### Base Department &numero;&nbsp;234&mdash;Control Computers
+### Base Department No.&nbsp;234&mdash;Control Computers
 
 - HTML
 
 
 ```html
-Base Department &numero;&nbsp;234&mdash;Control Computers
+Base Department No.&nbsp;234&mdash;Control Computers
 ```
 
 ---
@@ -152,7 +152,7 @@ Base Department &numero;&nbsp;234&mdash;Control Computers
 
 
 ```text
-Base Department № 234—Control Computers
+Base Department No. 234—Control Computers
 ```
 
 ---
@@ -161,17 +161,17 @@ Base Department № 234—Control Computers
 
 
 ```tex
-Base Department \textnumero~234---Control Computers
+Base Department No.~234---Control Computers
 ```
 
 ---
-### Base Department &numero;&nbsp;238&mdash;High Performance Computing Systems
+### Base Department No.&nbsp;238&mdash;High Performance Computing Systems
 
 - HTML
 
 
 ```html
-Base Department &numero;&nbsp;238&mdash;High Performance Computing Systems
+Base Department No.&nbsp;238&mdash;High Performance Computing Systems
 ```
 
 ---
@@ -179,7 +179,7 @@ Base Department &numero;&nbsp;238&mdash;High Performance Computing Systems
 
 
 ```text
-Base Department № 238—High Performance Computing Systems
+Base Department No. 238—High Performance Computing Systems
 ```
 
 ---
@@ -188,17 +188,17 @@ Base Department № 238—High Performance Computing Systems
 
 
 ```tex
-Base Department \textnumero~238---High Performance Computing Systems
+Base Department No.~238---High Performance Computing Systems
 ```
 
 ---
-### Base Department &numero;&nbsp;239&mdash;Automated Systems of Organizational Management
+### Base Department No.&nbsp;239&mdash;Automated Systems of Organizational Management
 
 - HTML
 
 
 ```html
-Base Department &numero;&nbsp;239&mdash;Automated Systems of Organizational Management
+Base Department No.&nbsp;239&mdash;Automated Systems of Organizational Management
 ```
 
 ---
@@ -206,7 +206,7 @@ Base Department &numero;&nbsp;239&mdash;Automated Systems of Organizational Mana
 
 
 ```text
-Base Department № 239—Automated Systems of Organizational Management
+Base Department No. 239—Automated Systems of Organizational Management
 ```
 
 ---
@@ -215,17 +215,17 @@ Base Department № 239—Automated Systems of Organizational Management
 
 
 ```tex
-Base Department \textnumero~239---Automated Systems of Organizational Management
+Base Department No.~239---Automated Systems of Organizational Management
 ```
 
 ---
-### Base Department &numero;&nbsp;244&mdash;Information Technology in Control Systems
+### Base Department No.&nbsp;244&mdash;Information Technology in Control Systems
 
 - HTML
 
 
 ```html
-Base Department &numero;&nbsp;244&mdash;Information Technology in Control Systems
+Base Department No.&nbsp;244&mdash;Information Technology in Control Systems
 ```
 
 ---
@@ -233,7 +233,7 @@ Base Department &numero;&nbsp;244&mdash;Information Technology in Control System
 
 
 ```text
-Base Department № 244—Information Technology in Control Systems
+Base Department No. 244—Information Technology in Control Systems
 ```
 
 ---
@@ -242,17 +242,17 @@ Base Department № 244—Information Technology in Control Systems
 
 
 ```tex
-Base Department \textnumero~244---Information Technology in Control Systems
+Base Department No.~244---Information Technology in Control Systems
 ```
 
 ---
-### Base Department &numero;&nbsp;250&mdash;Mathematical Software Information Systems
+### Base Department No.&nbsp;250&mdash;Mathematical Software Information Systems
 
 - HTML
 
 
 ```html
-Base Department &numero;&nbsp;250&mdash;Mathematical Software Information Systems
+Base Department No.&nbsp;250&mdash;Mathematical Software Information Systems
 ```
 
 ---
@@ -260,7 +260,7 @@ Base Department &numero;&nbsp;250&mdash;Mathematical Software Information System
 
 
 ```text
-Base Department № 250—Mathematical Software Information Systems
+Base Department No. 250—Mathematical Software Information Systems
 ```
 
 ---
@@ -269,17 +269,17 @@ Base Department № 250—Mathematical Software Information Systems
 
 
 ```tex
-Base Department \textnumero~250---Mathematical Software Information Systems
+Base Department No.~250---Mathematical Software Information Systems
 ```
 
 ---
-### Base Department &numero;&nbsp;256&mdash;Medical Information Systems
+### Base Department No.&nbsp;256&mdash;Medical Information Systems
 
 - HTML
 
 
 ```html
-Base Department &numero;&nbsp;256&mdash;Medical Information Systems
+Base Department No.&nbsp;256&mdash;Medical Information Systems
 ```
 
 ---
@@ -287,7 +287,7 @@ Base Department &numero;&nbsp;256&mdash;Medical Information Systems
 
 
 ```text
-Base Department № 256—Medical Information Systems
+Base Department No. 256—Medical Information Systems
 ```
 
 ---
@@ -296,7 +296,7 @@ Base Department № 256—Medical Information Systems
 
 
 ```tex
-Base Department \textnumero~256---Medical Information Systems
+Base Department No.~256---Medical Information Systems
 ```
 
 ---
@@ -365,13 +365,13 @@ Interdisciplinary Research and Innovation Laboratory of Information Bionics and 
 ```
 
 ---
-### Base Department &numero;&nbsp;257&mdash;Information Technologies of Data Processing and Analysis in Hydrometeorology
+### Base Department No.&nbsp;257&mdash;Information Technologies of Data Processing and Analysis in Hydrometeorology
 
 - HTML
 
 
 ```html
-Base Department &numero;&nbsp;257&mdash;Information Technologies of Data Processing and Analysis in Hydrometeorology
+Base Department No.&nbsp;257&mdash;Information Technologies of Data Processing and Analysis in Hydrometeorology
 ```
 
 ---
@@ -379,7 +379,7 @@ Base Department &numero;&nbsp;257&mdash;Information Technologies of Data Process
 
 
 ```text
-Base Department № 257—Information Technologies of Data Processing and Analysis in Hydrometeorology
+Base Department No. 257—Information Technologies of Data Processing and Analysis in Hydrometeorology
 ```
 
 ---
@@ -388,7 +388,7 @@ Base Department № 257—Information Technologies of Data Processing and Analys
 
 
 ```tex
-Base Department \textnumero~257---Information Technologies of Data Processing and Analysis in Hydrometeorology
+Base Department No.~257---Information Technologies of Data Processing and Analysis in Hydrometeorology
 ```
 
 ---

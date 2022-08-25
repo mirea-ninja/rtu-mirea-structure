@@ -34,7 +34,6 @@ def from_tex_to_text(tex_source):
         .replace("<<", "«")
         .replace(">>", "»")
         .replace("‘‘", "“")
-        .replace("‘‘", "“")
         .replace("’’", "”")
         .replace("\\textnumero", "№")
     )
