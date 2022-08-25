@@ -10,7 +10,7 @@
 
 
 ```html
-The Federal State Budget Educational Institution of Higher Education “MIREA&mdash;Russian Technological University“
+The Federal State Budget Educational Institution of Higher Education “MIREA&mdash;Russian Technological University”
 ```
 
 ---
@@ -18,7 +18,7 @@ The Federal State Budget Educational Institution of Higher Education “MIREA&md
 
 
 ```text
-The Federal State Budget Educational Institution of Higher Education “MIREA—Russian Technological University“
+The Federal State Budget Educational Institution of Higher Education “MIREA—Russian Technological University”
 ```
 
 ---
@@ -26,7 +26,7 @@ The Federal State Budget Educational Institution of Higher Education “MIREA—
 
 
 ```tex
-The Federal State Budget Educational Institution of Higher Education “MIREA---Russian Technological University“
+The Federal State Budget Educational Institution of Higher Education ‘‘MIREA---Russian Technological University’’
 ```
 
 ---
@@ -34,7 +34,7 @@ The Federal State Budget Educational Institution of Higher Education “MIREA---
 
 
 ```tex
-The Federal State Budget Educational Institution of Higher Education }MIREA---Russian Technological University}
+The Federal State Budget Educational Institution of Higher Education \say{MIREA---Russian Technological University}
 ```
 
 ---
