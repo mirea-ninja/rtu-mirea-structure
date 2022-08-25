@@ -73,8 +73,8 @@ RTU MIREA
 - [Структура РТУ МИРЭА]
 - [ГОСТ 8.417-2002]
 - [Википедия. Неразрывный пробел]
-- [А.&nbsp;Лебедев «Ководство. §&nbsp;97. Тире, минус и&nbsp;дефис, или Черты русской типографики]
-- [А.&nbsp;Лебедев «Ководство. §&nbsp;158. Короткое тире»]
+- [А.&#8239;Лебедев «Ководство. §&nbsp;97. Тире, минус и&nbsp;дефис, или Черты русской типографики]
+- [А.&#8239;Лебедев «Ководство. §&nbsp;158. Короткое тире»]
 
 
 
@@ -89,8 +89,8 @@ RTU MIREA
 [The Institute of Management Technologies]: educational_and_scientific_structural_divisions/IMT.md
 [The Institute of Radioelectronics and Informatics]: educational_and_scientific_structural_divisions/IRI.md
 [The Institute of Youth Policy and International Relations]: educational_and_scientific_structural_divisions/IYPIR.md
-[А.&nbsp;Лебедев «Ководство. §&nbsp;158. Короткое тире»]: https://www.artlebedev.ru/kovodstvo/sections/158/
-[А.&nbsp;Лебедев «Ководство. §&nbsp;97. Тире, минус и&nbsp;дефис, или Черты русской типографики]: https://www.artlebedev.ru/kovodstvo/sections/97/
+[А.&#8239;Лебедев «Ководство. §&nbsp;158. Короткое тире»]: https://www.artlebedev.ru/kovodstvo/sections/158/
+[А.&#8239;Лебедев «Ководство. §&nbsp;97. Тире, минус и&nbsp;дефис, или Черты русской типографики]: https://www.artlebedev.ru/kovodstvo/sections/97/
 [Википедия. Неразрывный пробел]: https://ru.wikipedia.org/wiki/Неразрывный_пробел
 [ГОСТ 8.417-2002]: https://ru.wikisource.org/wiki/ГОСТ_8.417‒2002
 [Структура РТУ МИРЭА]: https://www.mirea.ru/about/the-structure-of-the-university/

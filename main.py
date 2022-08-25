@@ -29,6 +29,7 @@ def text_fenced_code_block(code):
 def from_tex_to_text(tex_source):
     return (
         tex_source.replace("~", " ")
+        .replace("\\,", " ")
         .replace("---", "—")
         .replace("--", "–")
         .replace("<<", "«")
@@ -42,6 +43,7 @@ def from_tex_to_text(tex_source):
 def from_tex_to_html(tex_source):
     return (
         tex_source.replace("~", "&nbsp;")
+        .replace("\\,", "&#8239;")
         .replace("---", "&mdash;")
         .replace("--", "&#8211;")
         .replace("<<", "&laquo;")
@@ -139,8 +141,8 @@ def generate_university_md_file(rtu_mirea_structure, path: Path):
         "Структура РТУ МИРЭА": "https://www.mirea.ru/about/the-structure-of-the-university/",
         "ГОСТ 8.417-2002": "https://ru.wikisource.org/wiki/ГОСТ_8.417‒2002",
         "Википедия. Неразрывный пробел": "https://ru.wikipedia.org/wiki/Неразрывный_пробел",
-        "А.&nbsp;Лебедев «Ководство. §&nbsp;97. Тире, минус и&nbsp;дефис, или Черты русской типографики": "https://www.artlebedev.ru/kovodstvo/sections/97/",
-        "А.&nbsp;Лебедев «Ководство. §&nbsp;158. Короткое тире»": "https://www.artlebedev.ru/kovodstvo/sections/158/",
+        "А.&#8239;Лебедев «Ководство. §&nbsp;97. Тире, минус и&nbsp;дефис, или Черты русской типографики": "https://www.artlebedev.ru/kovodstvo/sections/97/",
+        "А.&#8239;Лебедев «Ководство. §&nbsp;158. Короткое тире»": "https://www.artlebedev.ru/kovodstvo/sections/158/",
     }
     md_file.new_list(
         list(map(lambda key: md_file.new_reference_link(sources[key], key), sources))
