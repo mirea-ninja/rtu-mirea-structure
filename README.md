@@ -2,48 +2,15 @@
 
 
 
+
+[English names]
+
+
+
+
+
 # Университет
 
-## Название
-
-- HTML
-
-
-```html
-МИРЭА&nbsp;&mdash; Российский технологический университет
-```
-
----
-- plain text
-
-
-```text
-МИРЭА — Российский технологический университет
-```
-
----
-- TeX
-- TeX with dirtytalk package
-
-
-```tex
-МИРЭА~--- Российский технологический университет
-```
-
----
-## Короткое название
-
-- HTML
-- plain text
-- TeX
-- TeX with dirtytalk package
-
-
-```html
-РТУ МИРЭА
-```
-
----
 ## Полное название
 
 - HTML
@@ -78,6 +45,19 @@
 ```
 
 ---
+## Короткое название
+
+- HTML
+- plain text
+- TeX
+- TeX with dirtytalk package
+
+
+```html
+РТУ МИРЭА
+```
+
+---
 ## Учебно-научные структурные подразделения
 
 - [Институт информационных технологий]
@@ -109,15 +89,19 @@
 [А.&nbsp;Лебедев «Ководство. §&nbsp;97. Тире, минус и&nbsp;дефис, или Черты русской типографики]: https://www.artlebedev.ru/kovodstvo/sections/97/
 [Википедия. Неразрывный пробел]: https://ru.wikipedia.org/wiki/Неразрывный_пробел
 [ГОСТ 8.417-2002]: https://ru.wikisource.org/wiki/ГОСТ_8.417‒2002
-[Институт информационных технологий]: ./educational_and_scientific_structural_divisions/ИИТ.md
-[Институт искусственного интеллекта]: ./educational_and_scientific_structural_divisions/ИИИ.md
-[Институт кибербезопасности и&nbsp;цифровых технологий]: ./educational_and_scientific_structural_divisions/ИКЦТ.md
-[Институт молодежной политики и&nbsp;международных отношений]: ./educational_and_scientific_structural_divisions/ИМПМО.md
-[Институт перспективных технологий и&nbsp;индустриального программирования]: ./educational_and_scientific_structural_divisions/ИПТИП.md
-[Институт радиоэлектроники и&nbsp;информатики]: ./educational_and_scientific_structural_divisions/ИРИ.md
-[Институт технологий управления]: ./educational_and_scientific_structural_divisions/ИТУ.md
-[Институт тонких химических технологий имени М.&nbsp;В.&nbsp;Ломоносова]: ./educational_and_scientific_structural_divisions/ИТХТ.md
-[Колледж программирования и&nbsp;кибербезопасности]: ./educational_and_scientific_structural_divisions/КПК.md
+[Институт информационных технологий]: ru_RU/educational_and_scientific_structural_divisions/ИИТ.md
+[Институт искусственного интеллекта]: ru_RU/educational_and_scientific_structural_divisions/ИИИ.md
+[Институт кибербезопасности и&nbsp;цифровых технологий]: ru_RU/educational_and_scientific_structural_divisions/ИКЦТ.md
+[Институт молодежной политики и&nbsp;международных отношений]: ru_RU/educational_and_scientific_structural_divisions/ИМПМО.md
+[Институт перспективных технологий и&nbsp;индустриального программирования]: ru_RU/educational_and_scientific_structural_divisions/ИПТИП.md
+[Институт радиоэлектроники и&nbsp;информатики]: ru_RU/educational_and_scientific_structural_divisions/ИРИ.md
+[Институт технологий управления]: ru_RU/educational_and_scientific_structural_divisions/ИТУ.md
+[Институт тонких химических технологий имени М.&nbsp;В.&nbsp;Ломоносова]: ru_RU/educational_and_scientific_structural_divisions/ИТХТ%20имени%20М.%20В.%20Ломоносова.md
+[Колледж программирования и&nbsp;кибербезопасности]: ru_RU/educational_and_scientific_structural_divisions/КПК.md
 [Структура РТУ МИРЭА]: https://www.mirea.ru/about/the-structure-of-the-university/
-[филиал РТУ МИРЭА в&nbsp;г.&nbsp;Ставрополе]: ./branches/филиал%20РТУ%20МИРЭА%20в%20г.%20Ставрополе.md
-[филиал РТУ МИРЭА в&nbsp;г.&nbsp;Фрязино]: ./branches/филиал%20РТУ%20МИРЭА%20в%20г.%20Фрязино.md
+[филиал РТУ МИРЭА в&nbsp;г.&nbsp;Ставрополе]: ru_RU/branches/филиал%20РТУ%20МИРЭА%20в%20г.%20Ставрополе.md
+[филиал РТУ МИРЭА в&nbsp;г.&nbsp;Фрязино]: ru_RU/branches/филиал%20РТУ%20МИРЭА%20в%20г.%20Фрязино.md
+
+
+
+[English names]: en_US/README.md
