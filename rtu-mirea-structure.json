@@ -244,13 +244,35 @@
     ]
   },
   "en_US": {
-    "full_name": "The Federal State Budget Educational Institution of Higher Education “MIREA---Russian Technological University“",
+    "full_name": "The Federal State Budget Educational Institution of Higher Education ‘‘MIREA---Russian Technological University’’",
     "short_name": "RTU MIREA",
     "educational_and_scientific_structural_divisions": [
       {
         "full_name": "The Institute of Information Technologies",
         "short_name": "IIT",
-        "departments": []
+        "departments": [
+          "The Department of Computer Engineering",
+          "The Department of Mathematical Software and Standardization of Information Technology",
+          "The Department of Applied Mathematics",
+          "The Department of Corporate Information Systems",
+          "Base Department \\textnumero~231---Information Processes and Systems",
+          "Base Department \\textnumero~232---Computing Real Time Systems",
+          "Base Department \\textnumero~234---Control Computers",
+          "Base Department \\textnumero~238---High Performance Computing Systems",
+          "Base Department \\textnumero~239---Automated Systems of Organizational Management",
+          "Base Department \\textnumero~244---Information Technology in Control Systems",
+          "Base Department \\textnumero~250---Mathematical Software Information Systems",
+          "Base Department \\textnumero~256---Medical Information Systems",
+          "The Department of Instrumental and Applied Software",
+          "The Department of Practical and Applied Computer Science",
+          "Specialized Educational Scientific Laboratory of Information Technologies of The Internet of Things",
+          "Specialized Educational and Scientific Laboratory of Multimedia Technologies",
+          "Interdisciplinary Research and Innovation Laboratory of Information Bionics and Modeling",
+          "Base Department \\textnumero~257---Information Technologies of Data Processing and Analysis in Hydrometeorology",
+          "The Department of Information Technologies for Big Data Processing and Analysis",
+          "The Center for Cyberpsychology and Applied Big Data Analysis",
+          "The Laboratory of Information and Network Technologies"
+        ]
       },
       {
         "full_name": "Artificial Intelligence Institute",
