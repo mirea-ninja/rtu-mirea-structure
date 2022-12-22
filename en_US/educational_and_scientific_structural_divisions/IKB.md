@@ -26,7 +26,7 @@ The Institute of Cybersecurity and Digital Technologies
 
 
 ```html
-ICDT
+IKB
 ```
 
 ---

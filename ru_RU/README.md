@@ -84,7 +84,7 @@
 [ГОСТ 8.417-2002]: https://ru.wikisource.org/wiki/ГОСТ_8.417‒2002
 [Институт информационных технологий]: educational_and_scientific_structural_divisions/ИИТ.md
 [Институт искусственного интеллекта]: educational_and_scientific_structural_divisions/ИИИ.md
-[Институт кибербезопасности и&nbsp;цифровых технологий]: educational_and_scientific_structural_divisions/ИКЦТ.md
+[Институт кибербезопасности и&nbsp;цифровых технологий]: educational_and_scientific_structural_divisions/ИКБ.md
 [Институт молодежной политики и&nbsp;международных отношений]: educational_and_scientific_structural_divisions/ИМПМО.md
 [Институт перспективных технологий и&nbsp;индустриального программирования]: educational_and_scientific_structural_divisions/ИПТИП.md
 [Институт радиоэлектроники и&nbsp;информатики]: educational_and_scientific_structural_divisions/ИРИ.md
