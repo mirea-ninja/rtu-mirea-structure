@@ -83,7 +83,7 @@ RTU MIREA
 [Stavropol Branch of RTU MIREA]: branches/Stavropol%20Branch%20of%20RTU%20MIREA.md
 [The College of Programming and Cybersecurity]: educational_and_scientific_structural_divisions/CPC.md
 [The Institute of Advanced Technologies and Industrial Programming]: educational_and_scientific_structural_divisions/IATIP.md
-[The Institute of Cybersecurity and Digital Technologies]: educational_and_scientific_structural_divisions/ICDT.md
+[The Institute of Cybersecurity and Digital Technologies]: educational_and_scientific_structural_divisions/IKB.md
 [The Institute of Fine Chemical Technologies named after M.&nbsp;V.&nbsp;Lomonosov]: educational_and_scientific_structural_divisions/IFCT%20named%20after%20M.%20V.%20Lomonosov.md
 [The Institute of Information Technologies]: educational_and_scientific_structural_divisions/IIT.md
 [The Institute of Management Technologies]: educational_and_scientific_structural_divisions/IMT.md
